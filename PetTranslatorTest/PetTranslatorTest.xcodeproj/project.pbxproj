@@ -6,36 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A3DB15FF2D552BA700A82874 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3DB15FE2D552BA700A82874 /* SnapKit */; };
+		A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16022D552E0C00A82874 /* AppDelegate.swift */; };
+		A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16072D552E0C00A82874 /* SceneDelegate.swift */; };
+		A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16082D552E0C00A82874 /* ViewController.swift */; };
+		A3DB160D2D552E0C00A82874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16032D552E0C00A82874 /* Assets.xcassets */; };
+		A3DB160F2D552E0C00A82874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16062D552E0C00A82874 /* LaunchScreen.storyboard */; };
+		A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */; };
+		A3DB16162D552E5100A82874 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16132D552E5100A82874 /* OFL.txt */; };
+		A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */; };
+		A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161A2D55316600A82874 /* UIColor+Extension.swift */; };
+		A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161C2D5531EB00A82874 /* AppColors.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A3DB15E52D55262A00A82874 /* PetTranslatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetTranslatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3DB16022D552E0C00A82874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3DB16032D552E0C00A82874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3DB16042D552E0C00A82874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3DB16052D552E0C00A82874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3DB16072D552E0C00A82874 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3DB16082D552E0C00A82874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KonkhmerSleokchher-Regular.ttf"; sourceTree = "<group>"; };
+		A3DB16132D552E5100A82874 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A3DB161A2D55316600A82874 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A3DB161C2D5531EB00A82874 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A3DB15F72D55262B00A82874 /* Exceptions for "PetTranslatorTest" folder in "PetTranslatorTest" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = A3DB15E42D55262A00A82874 /* PetTranslatorTest */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A3DB15E72D55262A00A82874 /* PetTranslatorTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A3DB15F72D55262B00A82874 /* Exceptions for "PetTranslatorTest" folder in "PetTranslatorTest" target */,
-			);
-			path = PetTranslatorTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A3DB15E22D55262A00A82874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DB15FF2D552BA700A82874 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +50,7 @@
 		A3DB15DC2D55262A00A82874 = {
 			isa = PBXGroup;
 			children = (
-				A3DB15E72D55262A00A82874 /* PetTranslatorTest */,
+				A3DB16092D552E0C00A82874 /* PetTranslatorTest */,
 				A3DB15E62D55262A00A82874 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +61,80 @@
 				A3DB15E52D55262A00A82874 /* PetTranslatorTest.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A3DB16092D552E0C00A82874 /* PetTranslatorTest */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB161E2D55350600A82874 /* Models */,
+				A3DB16202D55351C00A82874 /* Controllers */,
+				A3DB161F2D55351000A82874 /* Views */,
+				A3DB16102D552E0F00A82874 /* Resources */,
+				A3DB16022D552E0C00A82874 /* AppDelegate.swift */,
+				A3DB16032D552E0C00A82874 /* Assets.xcassets */,
+				A3DB16042D552E0C00A82874 /* Info.plist */,
+				A3DB16062D552E0C00A82874 /* LaunchScreen.storyboard */,
+				A3DB16072D552E0C00A82874 /* SceneDelegate.swift */,
+				A3DB16082D552E0C00A82874 /* ViewController.swift */,
+			);
+			path = PetTranslatorTest;
+			sourceTree = "<group>";
+		};
+		A3DB16102D552E0F00A82874 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB16172D552EE400A82874 /* Extension */,
+				A3DB16112D552E2300A82874 /* Fonts */,
+				A3DB161C2D5531EB00A82874 /* AppColors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3DB16112D552E2300A82874 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB16142D552E5100A82874 /* Konkhmer Sleokchher */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A3DB16142D552E5100A82874 /* Konkhmer Sleokchher */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */,
+				A3DB16132D552E5100A82874 /* OFL.txt */,
+			);
+			path = "Konkhmer Sleokchher";
+			sourceTree = "<group>";
+		};
+		A3DB16172D552EE400A82874 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */,
+				A3DB161A2D55316600A82874 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A3DB161E2D55350600A82874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3DB161F2D55351000A82874 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3DB16202D55351C00A82874 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,11 +152,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A3DB15E72D55262A00A82874 /* PetTranslatorTest */,
-			);
 			name = PetTranslatorTest;
 			packageProductDependencies = (
+				A3DB15FE2D552BA700A82874 /* SnapKit */,
 			);
 			productName = PetTranslatorTest;
 			productReference = A3DB15E52D55262A00A82874 /* PetTranslatorTest.app */;
@@ -107,6 +184,9 @@
 			);
 			mainGroup = A3DB15DC2D55262A00A82874;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A3DB15FD2D552BA700A82874 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A3DB15E62D55262A00A82874 /* Products */;
 			projectDirPath = "";
@@ -122,6 +202,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DB160D2D552E0C00A82874 /* Assets.xcassets in Resources */,
+				A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */,
+				A3DB16162D552E5100A82874 /* OFL.txt in Resources */,
+				A3DB160F2D552E0C00A82874 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +216,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */,
+				A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */,
+				A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */,
+				A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */,
+				A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */,
+				A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3DB16062D552E0C00A82874 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3DB16052D552E0C00A82874 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A3DB15F92D55262B00A82874 /* Debug */ = {
@@ -333,6 +434,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3DB15FD2D552BA700A82874 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3DB15FE2D552BA700A82874 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3DB15FD2D552BA700A82874 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3DB15DD2D55262A00A82874 /* Project object */;
 }
