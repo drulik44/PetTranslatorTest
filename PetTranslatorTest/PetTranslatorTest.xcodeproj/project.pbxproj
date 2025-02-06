@@ -16,6 +16,8 @@
 		A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */; };
 		A3DB16162D552E5100A82874 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16132D552E5100A82874 /* OFL.txt */; };
 		A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */; };
+		A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161A2D55316600A82874 /* UIColor+Extension.swift */; };
+		A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161C2D5531EB00A82874 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KonkhmerSleokchher-Regular.ttf"; sourceTree = "<group>"; };
 		A3DB16132D552E5100A82874 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		A3DB161A2D55316600A82874 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A3DB161C2D5531EB00A82874 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,9 @@
 		A3DB16092D552E0C00A82874 /* PetTranslatorTest */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB161E2D55350600A82874 /* Models */,
+				A3DB16202D55351C00A82874 /* Controllers */,
+				A3DB161F2D55351000A82874 /* Views */,
 				A3DB16102D552E0F00A82874 /* Resources */,
 				A3DB16022D552E0C00A82874 /* AppDelegate.swift */,
 				A3DB16032D552E0C00A82874 /* Assets.xcassets */,
@@ -78,6 +85,7 @@
 			children = (
 				A3DB16172D552EE400A82874 /* Extension */,
 				A3DB16112D552E2300A82874 /* Fonts */,
+				A3DB161C2D5531EB00A82874 /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -103,8 +111,30 @@
 			isa = PBXGroup;
 			children = (
 				A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */,
+				A3DB161A2D55316600A82874 /* UIColor+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A3DB161E2D55350600A82874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3DB161F2D55351000A82874 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3DB16202D55351C00A82874 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +219,9 @@
 				A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */,
 				A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */,
 				A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */,
+				A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */,
 				A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */,
+				A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
