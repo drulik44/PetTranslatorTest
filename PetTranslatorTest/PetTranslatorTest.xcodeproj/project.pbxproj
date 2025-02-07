@@ -18,6 +18,11 @@
 		A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */; };
 		A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161A2D55316600A82874 /* UIColor+Extension.swift */; };
 		A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB161C2D5531EB00A82874 /* AppColors.swift */; };
+		A3DB16222D55403300A82874 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16212D55403300A82874 /* MainTabBarController.swift */; };
+		A3DB16242D5540B000A82874 /* TranslatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16232D5540B000A82874 /* TranslatorViewController.swift */; };
+		A3DB16262D5541B900A82874 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16252D5541B900A82874 /* SettingsViewController.swift */; };
+		A3DB16282D5545EC00A82874 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16272D5545EC00A82874 /* MainScreenView.swift */; };
+		A3DB162B2D554F4100A82874 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB162A2D554F4100A82874 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		A3DB161A2D55316600A82874 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		A3DB161C2D5531EB00A82874 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		A3DB16212D55403300A82874 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		A3DB16232D5540B000A82874 /* TranslatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewController.swift; sourceTree = "<group>"; };
+		A3DB16252D5541B900A82874 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A3DB16272D5545EC00A82874 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		A3DB162A2D554F4100A82874 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +136,8 @@
 		A3DB161F2D55351000A82874 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB16272D5545EC00A82874 /* MainScreenView.swift */,
+				A3DB162A2D554F4100A82874 /* GradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -133,6 +145,9 @@
 		A3DB16202D55351C00A82874 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB16212D55403300A82874 /* MainTabBarController.swift */,
+				A3DB16232D5540B000A82874 /* TranslatorViewController.swift */,
+				A3DB16252D5541B900A82874 /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -217,11 +232,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */,
+				A3DB16282D5545EC00A82874 /* MainScreenView.swift in Sources */,
+				A3DB162B2D554F4100A82874 /* GradientView.swift in Sources */,
 				A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */,
+				A3DB16242D5540B000A82874 /* TranslatorViewController.swift in Sources */,
 				A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */,
+				A3DB16222D55403300A82874 /* MainTabBarController.swift in Sources */,
 				A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */,
 				A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */,
 				A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */,
+				A3DB16262D5541B900A82874 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
