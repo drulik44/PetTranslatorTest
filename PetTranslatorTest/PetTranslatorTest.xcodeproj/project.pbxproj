@@ -10,7 +10,6 @@
 		A3DB15FF2D552BA700A82874 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3DB15FE2D552BA700A82874 /* SnapKit */; };
 		A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16022D552E0C00A82874 /* AppDelegate.swift */; };
 		A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16072D552E0C00A82874 /* SceneDelegate.swift */; };
-		A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16082D552E0C00A82874 /* ViewController.swift */; };
 		A3DB160D2D552E0C00A82874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16032D552E0C00A82874 /* Assets.xcassets */; };
 		A3DB160F2D552E0C00A82874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16062D552E0C00A82874 /* LaunchScreen.storyboard */; };
 		A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */; };
@@ -23,7 +22,31 @@
 		A3DB16262D5541B900A82874 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16252D5541B900A82874 /* SettingsViewController.swift */; };
 		A3DB16282D5545EC00A82874 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16272D5545EC00A82874 /* MainScreenView.swift */; };
 		A3DB162B2D554F4100A82874 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB162A2D554F4100A82874 /* GradientView.swift */; };
+		A3DB162E2D56A8D800A82874 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A3DB162D2D56A8D800A82874 /* Lottie */; };
+		A3DB16322D56A9B600A82874 /* VoiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16312D56A9B600A82874 /* VoiceButton.swift */; };
+		A3DB163A2D56AE6400A82874 /* voice-NH2Fe1vRAY.json in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16392D56AE6300A82874 /* voice-NH2Fe1vRAY.json */; };
+		A3DB163C2D56B26200A82874 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163B2D56B26200A82874 /* Pets.swift */; };
+		A3DB163E2D57A1B100A82874 /* PetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163D2D57A1B100A82874 /* PetButton.swift */; };
+		A3DB16402D5905DE00A82874 /* TranslationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163F2D5905DE00A82874 /* TranslationMode.swift */; };
+		A3DB16422D591E0F00A82874 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16412D591E0F00A82874 /* ResultViewController.swift */; };
+		A3DB16462D59531E00A82874 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16452D59531E00A82874 /* ProcessView.swift */; };
+		A3DB16482D597CC900A82874 /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */; };
+		A3DB164A2D5A185000A82874 /* CircleBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16492D5A185000A82874 /* CircleBackButton.swift */; };
+		A3DB164C2D5A480C00A82874 /* RepeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB164B2D5A480C00A82874 /* RepeatButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3DB16382D56AD3900A82874 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A3DB15E52D55262A00A82874 /* PetTranslatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetTranslatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +55,6 @@
 		A3DB16042D552E0C00A82874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3DB16052D552E0C00A82874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3DB16072D552E0C00A82874 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3DB16082D552E0C00A82874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3DB16122D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KonkhmerSleokchher-Regular.ttf"; sourceTree = "<group>"; };
 		A3DB16132D552E5100A82874 /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		A3DB16182D552EEF00A82874 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
@@ -43,6 +65,16 @@
 		A3DB16252D5541B900A82874 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A3DB16272D5545EC00A82874 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		A3DB162A2D554F4100A82874 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A3DB16312D56A9B600A82874 /* VoiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceButton.swift; sourceTree = "<group>"; };
+		A3DB16392D56AE6300A82874 /* voice-NH2Fe1vRAY.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "voice-NH2Fe1vRAY.json"; sourceTree = "<group>"; };
+		A3DB163B2D56B26200A82874 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
+		A3DB163D2D57A1B100A82874 /* PetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetButton.swift; sourceTree = "<group>"; };
+		A3DB163F2D5905DE00A82874 /* TranslationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationMode.swift; sourceTree = "<group>"; };
+		A3DB16412D591E0F00A82874 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A3DB16452D59531E00A82874 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
+		A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleView.swift; sourceTree = "<group>"; };
+		A3DB16492D5A185000A82874 /* CircleBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackButton.swift; sourceTree = "<group>"; };
+		A3DB164B2D5A480C00A82874 /* RepeatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3DB15FF2D552BA700A82874 /* SnapKit in Frameworks */,
+				A3DB162E2D56A8D800A82874 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +95,7 @@
 			children = (
 				A3DB16092D552E0C00A82874 /* PetTranslatorTest */,
 				A3DB15E62D55262A00A82874 /* Products */,
+				A3DB16342D56AD3200A82874 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +119,7 @@
 				A3DB16042D552E0C00A82874 /* Info.plist */,
 				A3DB16062D552E0C00A82874 /* LaunchScreen.storyboard */,
 				A3DB16072D552E0C00A82874 /* SceneDelegate.swift */,
-				A3DB16082D552E0C00A82874 /* ViewController.swift */,
+				A3DB16392D56AE6300A82874 /* voice-NH2Fe1vRAY.json */,
 			);
 			path = PetTranslatorTest;
 			sourceTree = "<group>";
@@ -129,6 +163,8 @@
 		A3DB161E2D55350600A82874 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB163F2D5905DE00A82874 /* TranslationMode.swift */,
+				A3DB163B2D56B26200A82874 /* Pets.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,8 +172,14 @@
 		A3DB161F2D55351000A82874 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB164B2D5A480C00A82874 /* RepeatButton.swift */,
+				A3DB16492D5A185000A82874 /* CircleBackButton.swift */,
+				A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */,
+				A3DB16312D56A9B600A82874 /* VoiceButton.swift */,
 				A3DB16272D5545EC00A82874 /* MainScreenView.swift */,
 				A3DB162A2D554F4100A82874 /* GradientView.swift */,
+				A3DB163D2D57A1B100A82874 /* PetButton.swift */,
+				A3DB16452D59531E00A82874 /* ProcessView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,8 +190,16 @@
 				A3DB16212D55403300A82874 /* MainTabBarController.swift */,
 				A3DB16232D5540B000A82874 /* TranslatorViewController.swift */,
 				A3DB16252D5541B900A82874 /* SettingsViewController.swift */,
+				A3DB16412D591E0F00A82874 /* ResultViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A3DB16342D56AD3200A82874 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +212,7 @@
 				A3DB15E12D55262A00A82874 /* Sources */,
 				A3DB15E22D55262A00A82874 /* Frameworks */,
 				A3DB15E32D55262A00A82874 /* Resources */,
+				A3DB16382D56AD3900A82874 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +221,7 @@
 			name = PetTranslatorTest;
 			packageProductDependencies = (
 				A3DB15FE2D552BA700A82874 /* SnapKit */,
+				A3DB162D2D56A8D800A82874 /* Lottie */,
 			);
 			productName = PetTranslatorTest;
 			productReference = A3DB15E52D55262A00A82874 /* PetTranslatorTest.app */;
@@ -201,6 +253,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				A3DB15FD2D552BA700A82874 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A3DB162C2D56A8D800A82874 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A3DB15E62D55262A00A82874 /* Products */;
@@ -219,6 +272,7 @@
 			files = (
 				A3DB160D2D552E0C00A82874 /* Assets.xcassets in Resources */,
 				A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */,
+				A3DB163A2D56AE6400A82874 /* voice-NH2Fe1vRAY.json in Resources */,
 				A3DB16162D552E5100A82874 /* OFL.txt in Resources */,
 				A3DB160F2D552E0C00A82874 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -234,14 +288,22 @@
 				A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */,
 				A3DB16282D5545EC00A82874 /* MainScreenView.swift in Sources */,
 				A3DB162B2D554F4100A82874 /* GradientView.swift in Sources */,
+				A3DB16422D591E0F00A82874 /* ResultViewController.swift in Sources */,
+				A3DB163C2D56B26200A82874 /* Pets.swift in Sources */,
 				A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */,
+				A3DB16462D59531E00A82874 /* ProcessView.swift in Sources */,
 				A3DB16242D5540B000A82874 /* TranslatorViewController.swift in Sources */,
+				A3DB164A2D5A185000A82874 /* CircleBackButton.swift in Sources */,
 				A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */,
+				A3DB16402D5905DE00A82874 /* TranslationMode.swift in Sources */,
+				A3DB16482D597CC900A82874 /* SpeechBubbleView.swift in Sources */,
 				A3DB16222D55403300A82874 /* MainTabBarController.swift in Sources */,
 				A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */,
-				A3DB160C2D552E0C00A82874 /* ViewController.swift in Sources */,
+				A3DB164C2D5A480C00A82874 /* RepeatButton.swift in Sources */,
 				A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */,
+				A3DB16322D56A9B600A82874 /* VoiceButton.swift in Sources */,
 				A3DB16262D5541B900A82874 /* SettingsViewController.swift in Sources */,
+				A3DB163E2D57A1B100A82874 /* PetButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +335,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +528,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		A3DB162C2D56A8D800A82874 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -471,6 +543,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3DB15FD2D552BA700A82874 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		A3DB162D2D56A8D800A82874 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3DB162C2D56A8D800A82874 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
