@@ -16,19 +16,27 @@ class TranslatorViewController: UIViewController {
     private let gradientView = GradientView()
     private var isRecording = false
     
+    
     override func viewWillAppear(_ animated: Bool) {
-            super.viewWillAppear(animated)
-
-            let titleLabel = UILabel()
-            titleLabel.text = "Translator"
-            titleLabel.font = .Konkhmer.Regular.size(of: 32)
-        titleLabel.textColor = AppColors.main
-        navigationItem.titleView = titleLabel 
+        super.viewWillAppear(animated)
+        
+        let tittleLabel: UILabel = {
+            let label = UILabel()
+            label.text = "Translator"
+            label.font = .Konkhmer.Regular.size(of: 32)
+            label.textColor = AppColors.main
+            return label
+        }()
+        navigationItem.titleView = tittleLabel
     }
+    
+    
+  
+    
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupUI()
         setupActions()
     }
@@ -36,7 +44,7 @@ class TranslatorViewController: UIViewController {
     // MARK: - UI Setup
     private func setupUI() {
         mainView.backgroundColor = .clear
-       
+        
         
         view.addSubview(gradientView)
         view.addSubview(mainView)
@@ -105,7 +113,7 @@ class TranslatorViewController: UIViewController {
         if isRecording {
             print("Запись началась")
         } else {
-            navigateToResult()
+            checkAndNavigate()
         }
     }
     
@@ -164,13 +172,30 @@ class TranslatorViewController: UIViewController {
     }
     
     // MARK: - Navigate to Result
-    private func navigateToResult() {
+    private func navigateToPetResult() {
         let animalPhrases = AnimalPhrases()
         let speechText = animalPhrases.getPhrase(for: mainView.selectedAnimal)
-        let resultVC = ResultViewController(animal: mainView.selectedAnimal, translationMode: mainView.translationMode, speechText: speechText)
+        let resultVC = PetResultViewController(animal: mainView.selectedAnimal, translationMode: mainView.translationMode, speechText: speechText)
         navigationController?.pushViewController(resultVC, animated: true)
     }
+    
+    private func navigateToHumanResult() {
+        let animalPhrases = AnimalPhrases()
+        let animalSound = animalPhrases.getSound(for: mainView.selectedAnimal)
+        
+        let soundVC = HumanResultViewController(animal: mainView.selectedAnimal, animalSound: animalSound)
+        navigationController?.pushViewController(soundVC, animated: true)
+    }
 
-
+    
+    
+    private func checkAndNavigate() {
+        if mainView.translationLabelLeft.text == "PET"{
+            navigateToPetResult()
+        } else if mainView.translationLabelLeft.text == "HUMAN" {
+            navigateToHumanResult()
+        }
+        
+    }
+    
 }
-

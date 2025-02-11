@@ -2,7 +2,7 @@
 //  TranslationMode.swift
 //  PetTranslatorTest
 //
-//  Created by Руслан Жидких on 09.02.2025.
+//  Created by Руслан Жидких on 10.02.2025.
 //
 
 
