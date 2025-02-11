@@ -2,13 +2,13 @@
 //  ResultViewController.swift
 //  PetTranslatorTest
 //
-//  Created by Руслан Жидких on 09.02.2025.
+//  Created by Руслан Жидких on 10.02.2025.
 //
 import UIKit
 import SnapKit
 
 
-class ResultViewController: UIViewController {
+class PetResultViewController: UIViewController {
 
     private let processView: ProcessView
     

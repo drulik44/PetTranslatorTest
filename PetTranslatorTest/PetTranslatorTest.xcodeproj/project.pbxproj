@@ -28,11 +28,23 @@
 		A3DB163C2D56B26200A82874 /* Pets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163B2D56B26200A82874 /* Pets.swift */; };
 		A3DB163E2D57A1B100A82874 /* PetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163D2D57A1B100A82874 /* PetButton.swift */; };
 		A3DB16402D5905DE00A82874 /* TranslationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB163F2D5905DE00A82874 /* TranslationMode.swift */; };
-		A3DB16422D591E0F00A82874 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16412D591E0F00A82874 /* ResultViewController.swift */; };
+		A3DB16422D591E0F00A82874 /* PetResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16412D591E0F00A82874 /* PetResultViewController.swift */; };
 		A3DB16462D59531E00A82874 /* ProcessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16452D59531E00A82874 /* ProcessView.swift */; };
 		A3DB16482D597CC900A82874 /* SpeechBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */; };
 		A3DB164A2D5A185000A82874 /* CircleBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16492D5A185000A82874 /* CircleBackButton.swift */; };
 		A3DB164C2D5A480C00A82874 /* RepeatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB164B2D5A480C00A82874 /* RepeatButton.swift */; };
+		A3DB16502D5A722600A82874 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB164F2D5A722600A82874 /* SettingsOption.swift */; };
+		A3DB16522D5A723800A82874 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB16512D5A723800A82874 /* SettingsCell.swift */; };
+		A3DB16552D5A86F500A82874 /* dogSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16542D5A86F500A82874 /* dogSound1.mp3 */; };
+		A3DB16572D5A870300A82874 /* dogSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16562D5A870300A82874 /* dogSound2.mp3 */; };
+		A3DB16592D5A870D00A82874 /* dogSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16582D5A870D00A82874 /* dogSound3.mp3 */; };
+		A3DB165B2D5A872400A82874 /* dogSound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB165A2D5A872400A82874 /* dogSound4.mp3 */; };
+		A3DB165D2D5A8E9400A82874 /* HumanResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB165C2D5A8E9400A82874 /* HumanResultViewController.swift */; };
+		A3DB165F2D5A9C5700A82874 /* TranslateHumanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DB165E2D5A9C5700A82874 /* TranslateHumanView.swift */; };
+		A3DB16612D5AA1E000A82874 /* catSound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16602D5AA1E000A82874 /* catSound4.mp3 */; };
+		A3DB16632D5AA1E800A82874 /* catSound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16622D5AA1E800A82874 /* catSound3.mp3 */; };
+		A3DB16652D5AA1F200A82874 /* catSound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16642D5AA1F200A82874 /* catSound2.mp3 */; };
+		A3DB16672D5AA20B00A82874 /* catSound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3DB16662D5AA20B00A82874 /* catSound1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,11 +82,23 @@
 		A3DB163B2D56B26200A82874 /* Pets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pets.swift; sourceTree = "<group>"; };
 		A3DB163D2D57A1B100A82874 /* PetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetButton.swift; sourceTree = "<group>"; };
 		A3DB163F2D5905DE00A82874 /* TranslationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationMode.swift; sourceTree = "<group>"; };
-		A3DB16412D591E0F00A82874 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A3DB16412D591E0F00A82874 /* PetResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetResultViewController.swift; sourceTree = "<group>"; };
 		A3DB16452D59531E00A82874 /* ProcessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessView.swift; sourceTree = "<group>"; };
 		A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechBubbleView.swift; sourceTree = "<group>"; };
 		A3DB16492D5A185000A82874 /* CircleBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBackButton.swift; sourceTree = "<group>"; };
 		A3DB164B2D5A480C00A82874 /* RepeatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatButton.swift; sourceTree = "<group>"; };
+		A3DB164F2D5A722600A82874 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		A3DB16512D5A723800A82874 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		A3DB16542D5A86F500A82874 /* dogSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dogSound1.mp3; sourceTree = "<group>"; };
+		A3DB16562D5A870300A82874 /* dogSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dogSound2.mp3; sourceTree = "<group>"; };
+		A3DB16582D5A870D00A82874 /* dogSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dogSound3.mp3; sourceTree = "<group>"; };
+		A3DB165A2D5A872400A82874 /* dogSound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dogSound4.mp3; sourceTree = "<group>"; };
+		A3DB165C2D5A8E9400A82874 /* HumanResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanResultViewController.swift; sourceTree = "<group>"; };
+		A3DB165E2D5A9C5700A82874 /* TranslateHumanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateHumanView.swift; sourceTree = "<group>"; };
+		A3DB16602D5AA1E000A82874 /* catSound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catSound4.mp3; sourceTree = "<group>"; };
+		A3DB16622D5AA1E800A82874 /* catSound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catSound3.mp3; sourceTree = "<group>"; };
+		A3DB16642D5AA1F200A82874 /* catSound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catSound2.mp3; sourceTree = "<group>"; };
+		A3DB16662D5AA20B00A82874 /* catSound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catSound1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +134,7 @@
 		A3DB16092D552E0C00A82874 /* PetTranslatorTest */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB16532D5A86D300A82874 /* Music */,
 				A3DB161E2D55350600A82874 /* Models */,
 				A3DB16202D55351C00A82874 /* Controllers */,
 				A3DB161F2D55351000A82874 /* Views */,
@@ -163,6 +188,7 @@
 		A3DB161E2D55350600A82874 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB164F2D5A722600A82874 /* SettingsOption.swift */,
 				A3DB163F2D5905DE00A82874 /* TranslationMode.swift */,
 				A3DB163B2D56B26200A82874 /* Pets.swift */,
 			);
@@ -172,6 +198,7 @@
 		A3DB161F2D55351000A82874 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3DB16512D5A723800A82874 /* SettingsCell.swift */,
 				A3DB164B2D5A480C00A82874 /* RepeatButton.swift */,
 				A3DB16492D5A185000A82874 /* CircleBackButton.swift */,
 				A3DB16472D597CC900A82874 /* SpeechBubbleView.swift */,
@@ -180,6 +207,7 @@
 				A3DB162A2D554F4100A82874 /* GradientView.swift */,
 				A3DB163D2D57A1B100A82874 /* PetButton.swift */,
 				A3DB16452D59531E00A82874 /* ProcessView.swift */,
+				A3DB165E2D5A9C5700A82874 /* TranslateHumanView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,7 +218,8 @@
 				A3DB16212D55403300A82874 /* MainTabBarController.swift */,
 				A3DB16232D5540B000A82874 /* TranslatorViewController.swift */,
 				A3DB16252D5541B900A82874 /* SettingsViewController.swift */,
-				A3DB16412D591E0F00A82874 /* ResultViewController.swift */,
+				A3DB16412D591E0F00A82874 /* PetResultViewController.swift */,
+				A3DB165C2D5A8E9400A82874 /* HumanResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -200,6 +229,21 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3DB16532D5A86D300A82874 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A3DB16662D5AA20B00A82874 /* catSound1.mp3 */,
+				A3DB16642D5AA1F200A82874 /* catSound2.mp3 */,
+				A3DB16622D5AA1E800A82874 /* catSound3.mp3 */,
+				A3DB16602D5AA1E000A82874 /* catSound4.mp3 */,
+				A3DB16542D5A86F500A82874 /* dogSound1.mp3 */,
+				A3DB16562D5A870300A82874 /* dogSound2.mp3 */,
+				A3DB16582D5A870D00A82874 /* dogSound3.mp3 */,
+				A3DB165A2D5A872400A82874 /* dogSound4.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +315,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3DB160D2D552E0C00A82874 /* Assets.xcassets in Resources */,
+				A3DB165B2D5A872400A82874 /* dogSound4.mp3 in Resources */,
+				A3DB16592D5A870D00A82874 /* dogSound3.mp3 in Resources */,
+				A3DB16652D5AA1F200A82874 /* catSound2.mp3 in Resources */,
+				A3DB16632D5AA1E800A82874 /* catSound3.mp3 in Resources */,
 				A3DB16152D552E5100A82874 /* KonkhmerSleokchher-Regular.ttf in Resources */,
 				A3DB163A2D56AE6400A82874 /* voice-NH2Fe1vRAY.json in Resources */,
+				A3DB16572D5A870300A82874 /* dogSound2.mp3 in Resources */,
+				A3DB16552D5A86F500A82874 /* dogSound1.mp3 in Resources */,
+				A3DB16612D5AA1E000A82874 /* catSound4.mp3 in Resources */,
+				A3DB16672D5AA20B00A82874 /* catSound1.mp3 in Resources */,
 				A3DB16162D552E5100A82874 /* OFL.txt in Resources */,
 				A3DB160F2D552E0C00A82874 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -288,20 +340,24 @@
 				A3DB160A2D552E0C00A82874 /* AppDelegate.swift in Sources */,
 				A3DB16282D5545EC00A82874 /* MainScreenView.swift in Sources */,
 				A3DB162B2D554F4100A82874 /* GradientView.swift in Sources */,
-				A3DB16422D591E0F00A82874 /* ResultViewController.swift in Sources */,
+				A3DB16422D591E0F00A82874 /* PetResultViewController.swift in Sources */,
 				A3DB163C2D56B26200A82874 /* Pets.swift in Sources */,
 				A3DB160B2D552E0C00A82874 /* SceneDelegate.swift in Sources */,
 				A3DB16462D59531E00A82874 /* ProcessView.swift in Sources */,
 				A3DB16242D5540B000A82874 /* TranslatorViewController.swift in Sources */,
 				A3DB164A2D5A185000A82874 /* CircleBackButton.swift in Sources */,
+				A3DB165D2D5A8E9400A82874 /* HumanResultViewController.swift in Sources */,
 				A3DB16192D552EF100A82874 /* UIFont+Extension.swift in Sources */,
+				A3DB165F2D5A9C5700A82874 /* TranslateHumanView.swift in Sources */,
 				A3DB16402D5905DE00A82874 /* TranslationMode.swift in Sources */,
 				A3DB16482D597CC900A82874 /* SpeechBubbleView.swift in Sources */,
 				A3DB16222D55403300A82874 /* MainTabBarController.swift in Sources */,
 				A3DB161D2D5531EB00A82874 /* AppColors.swift in Sources */,
+				A3DB16522D5A723800A82874 /* SettingsCell.swift in Sources */,
 				A3DB164C2D5A480C00A82874 /* RepeatButton.swift in Sources */,
 				A3DB161B2D55316600A82874 /* UIColor+Extension.swift in Sources */,
 				A3DB16322D56A9B600A82874 /* VoiceButton.swift in Sources */,
+				A3DB16502D5A722600A82874 /* SettingsOption.swift in Sources */,
 				A3DB16262D5541B900A82874 /* SettingsViewController.swift in Sources */,
 				A3DB163E2D57A1B100A82874 /* PetButton.swift in Sources */,
 			);
