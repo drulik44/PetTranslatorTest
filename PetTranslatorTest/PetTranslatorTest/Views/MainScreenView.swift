@@ -5,28 +5,13 @@
 //  Created by Руслан Жидких on 06.02.2025.
 //
 
-
 import UIKit
 import SnapKit
 
 class MainScreenView: UIView {
     
-    var selectedAnimal: AnimalType = .dog {
-           didSet {
-               petUIImageView.image = UIImage(named: selectedAnimal.imageName)
-           }
-       }
-    var translationMode: TranslationMode = .humanToPet {
-           didSet {
-               updateTranslationLabels()
-           }
-       }
-
     // MARK: - UI Elements
     let voiceButton = VoiceButton()
-
-   
-  
     let translationLabelLeft: UILabel = {
         let label = UILabel()
         label.text = "HUMAN"
@@ -34,7 +19,7 @@ class MainScreenView: UIView {
         label.textAlignment = .center
         return label
     }()
-  
+    
     let translationLabelRight: UILabel = {
         let label = UILabel()
         label.text = "PET"
@@ -42,7 +27,7 @@ class MainScreenView: UIView {
         label.textAlignment = .center
         return label
     }()
-     
+    
     let swapButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "swap"), for: .normal)
@@ -63,8 +48,6 @@ class MainScreenView: UIView {
         return view
     }()
     
-    
-     
     public var catButton: PetButton = {
         let button = PetButton()
         button.backgroundColor = AppColors.catButtonColor
@@ -79,8 +62,6 @@ class MainScreenView: UIView {
         return button
     }()
     
-   
-    
     // MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -88,17 +69,15 @@ class MainScreenView: UIView {
         setupUI()
         
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     // MARK: - Setup UI
     private func setupUI() {
         backgroundColor = UIColor.systemBackground
         
-       
-       
         addSubview(swapButton)
         addSubview(translationLabelLeft)
         addSubview(translationLabelRight)
@@ -107,19 +86,17 @@ class MainScreenView: UIView {
         addSubview(petView)
         addSubview(catButton)
         addSubview(dogButton)
-
+        
         setupConstraints()
     }
-
+    
     // MARK: - Constraints
     private func setupConstraints() {
-       
-        
         swapButton.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(140)
         }
-            
+        
         translationLabelLeft.snp.makeConstraints { make in
             make.centerY.equalTo(swapButton)
             make.right.equalTo(swapButton.snp.left).offset(-48)
@@ -129,22 +106,19 @@ class MainScreenView: UIView {
             make.centerY.equalTo(swapButton)
             make.left.equalTo(swapButton.snp.right).offset(48)
         }
-      
+        
         voiceButton.snp.makeConstraints { make in
             make.width.equalTo(178)
             make.height.equalTo(176)
             make.left.equalToSuperview().offset(35)
             make.top.equalTo(swapButton.snp.bottom).offset(80)
         }
-       
+        
         petUIImageView.snp.makeConstraints { make in
             make.top.equalTo(voiceButton.snp.bottom).offset(50)
             make.centerX.equalToSuperview()
             make.width.height.equalTo(184)
         }
-
-        
-       
         
         petView.snp.makeConstraints { make in
             make.centerY.equalTo(voiceButton)
@@ -163,14 +137,27 @@ class MainScreenView: UIView {
             make.width.height.equalTo(70)
             make.centerX.equalTo(petView)
             make.top.equalTo(catButton.snp.bottom).offset(12)
-
-
         }
     }
+
+    // MARK: - Functions to update UI elements
+    func updatePetImage(with imageName: String) {
+        petUIImageView.image = UIImage(named: imageName)
+    }
+
+    func updateTranslationLabels(leftText: String, rightText: String) {
+        translationLabelLeft.text = leftText
+        translationLabelRight.text = rightText
+    }
     
-    private func updateTranslationLabels() {
-           let texts = translationMode.text
-           translationLabelLeft.text = texts.left
-           translationLabelRight.text = texts.right
-       }
+    func updatePetSelection(selectedAnimal: AnimalType) {
+        if selectedAnimal == .dog {
+            dogButton.alpha = 1.0
+            catButton.alpha = 0.5
+        } else {
+            dogButton.alpha = 0.5
+            catButton.alpha = 1.0
+        }
+    }
+
 }

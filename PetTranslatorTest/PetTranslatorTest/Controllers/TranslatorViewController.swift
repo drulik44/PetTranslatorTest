@@ -10,16 +10,17 @@ import SnapKit
 import AVFoundation
 
 class TranslatorViewController: UIViewController {
-    
     // MARK: - UI Elements
     private let mainView = MainScreenView()
     private let gradientView = GradientView()
     private var isRecording = false
-    
-    
+
+    private var selectedAnimal: AnimalType = .dog
+    private var translationMode: TranslationMode = .humanToPet
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         let tittleLabel: UILabel = {
             let label = UILabel()
             label.text = "Translator"
@@ -29,59 +30,64 @@ class TranslatorViewController: UIViewController {
         }()
         navigationItem.titleView = tittleLabel
     }
-    
-    
-  
-    
+
     // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupUI()
         setupActions()
     }
-    
+
     // MARK: - UI Setup
     private func setupUI() {
         mainView.backgroundColor = .clear
-        
-        
+
         view.addSubview(gradientView)
         view.addSubview(mainView)
-        
+
         gradientView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
+
         mainView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-        
+
         view.layoutIfNeeded()
         view.sendSubviewToBack(gradientView)
     }
-    
+
     // MARK: - Actions
     private func setupActions() {
-        mainView.dogButton.addTarget(self, action: #selector(selectDog), for:.touchUpInside)
-        mainView.catButton.addTarget(self, action: #selector(selectCat), for:.touchUpInside)
+        mainView.dogButton.addTarget(self, action: #selector(selectDog), for: .touchUpInside)
+        mainView.catButton.addTarget(self, action: #selector(selectCat), for: .touchUpInside)
         mainView.voiceButton.addTarget(self, action: #selector(startRecording), for: .touchUpInside)
         mainView.swapButton.addTarget(self, action: #selector(switchTranslationMode), for: .touchUpInside)
     }
-    
+
     // MARK: - Select Animal
     @objc private func selectDog() {
-        mainView.selectedAnimal = .dog
+            updateSelectedAnimal(.dog)
+        }
+
+        @objc private func selectCat() {
+            updateSelectedAnimal(.cat)
+        }
+
+   
+    // MARK: - Update Selected Animal
+    private func updateSelectedAnimal(_ animal: AnimalType) {
+        self.selectedAnimal = animal
+        mainView.updatePetSelection(selectedAnimal: animal)
+        mainView.updatePetImage(with: animal.imageName)
     }
-    
-    @objc private func selectCat() {
-        mainView.selectedAnimal = .cat
-    }
-    
+
+
     // MARK: - Voice Button Appearance
     private func updateVoiceButtonAppearance(isRecording: Bool) {
         let voiceButton = mainView.voiceButton
-        
+
         if isRecording {
             voiceButton.micIcon.isHidden = true
             voiceButton.animationView.isHidden = false
@@ -94,7 +100,7 @@ class TranslatorViewController: UIViewController {
             voiceButton.label.text = "Start Speak"
         }
     }
-    
+
     // MARK: - Start Recording
     @objc private func startRecording() {
         requestMicrophonePermission { granted in
@@ -105,28 +111,38 @@ class TranslatorViewController: UIViewController {
             }
         }
     }
-    
+
     private func toggleRecording() {
         isRecording.toggle()
         updateVoiceButtonAppearance(isRecording: isRecording)
-        
+
         if isRecording {
             print("Запись началась")
         } else {
             checkAndNavigate()
         }
     }
-    
+
     // MARK: - Switch Translation Mode
     @objc private func switchTranslationMode() {
-        mainView.translationMode = mainView.translationMode == .humanToPet ? .petToHuman : .humanToPet
+        UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseInOut, animations: {
+            self.mainView.swapButton.transform = self.mainView.swapButton.transform.rotated(by: .pi)
+        })
+        
+        self.translationMode = self.translationMode == .humanToPet ? .petToHuman : .humanToPet
+        
+        let texts = self.translationMode.text
+        mainView.updateTranslationLabels(leftText: texts.left, rightText: texts.right)
     }
-    
+
+
     // MARK: - Show Permission Alert
     private func showPermissionAlert() {
-        let alert = UIAlertController(title: "Enable Microphone Access",
-                                      message: "Please allow access to your microphone to use the app’s features",
-                                      preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: "Enable Microphone Access",
+            message: "Please allow access to your microphone to use the app’s features",
+            preferredStyle: .alert
+        )
         alert.addAction(UIAlertAction(title: "Settings", style: .default) { _ in
             guard let settingsURL = URL(string: UIApplication.openSettingsURLString) else { return }
             UIApplication.shared.open(settingsURL)
@@ -134,7 +150,7 @@ class TranslatorViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(alert, animated: true)
     }
-    
+
     // MARK: - Request Microphone Permission
     private func requestMicrophonePermission(completion: @escaping (Bool) -> Void) {
         let permissionStatus = AVAudioSession.sharedInstance().recordPermission
@@ -170,32 +186,35 @@ class TranslatorViewController: UIViewController {
             }
         }
     }
-    
+
     // MARK: - Navigate to Result
     private func navigateToPetResult() {
         let animalPhrases = AnimalPhrases()
-        let speechText = animalPhrases.getPhrase(for: mainView.selectedAnimal)
-        let resultVC = PetResultViewController(animal: mainView.selectedAnimal, translationMode: mainView.translationMode, speechText: speechText)
+        let speechText = animalPhrases.getPhrase(for: self.selectedAnimal)
+        let resultVC = PetResultViewController(
+            animal: self.selectedAnimal,
+            translationMode: self.translationMode,
+            speechText: speechText
+        )
         navigationController?.pushViewController(resultVC, animated: true)
     }
-    
+
     private func navigateToHumanResult() {
         let animalPhrases = AnimalPhrases()
-        let animalSound = animalPhrases.getSound(for: mainView.selectedAnimal)
-        
-        let soundVC = HumanResultViewController(animal: mainView.selectedAnimal, animalSound: animalSound)
+        let animalSound = animalPhrases.getSound(for: self.selectedAnimal)
+
+        let soundVC = HumanResultViewController(
+            animal: self.selectedAnimal,
+            animalSound: animalSound
+        )
         navigationController?.pushViewController(soundVC, animated: true)
     }
 
-    
-    
     private func checkAndNavigate() {
-        if mainView.translationLabelLeft.text == "PET"{
+        if self.translationMode == .petToHuman {
             navigateToPetResult()
-        } else if mainView.translationLabelLeft.text == "HUMAN" {
+        } else if self.translationMode == .humanToPet {
             navigateToHumanResult()
         }
-        
     }
-    
 }
